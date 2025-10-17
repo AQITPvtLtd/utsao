@@ -10,7 +10,7 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 // ✅ Custom Next Arrow
 const NextArrow = ({ onClick }) => (
     <div
-        className="absolute top-1/2 right-3 -translate-y-1/2 z-10 cursor-pointer"
+        className="absolute text-black top-1/2 right-3 -translate-y-1/2 z-10 cursor-pointer"
         onClick={onClick}
     >
         <GrNext size={28} />
@@ -20,7 +20,7 @@ const NextArrow = ({ onClick }) => (
 // ✅ Custom Previous Arrow
 const PrevArrow = ({ onClick }) => (
     <div
-        className="absolute top-1/2 left-3 -translate-y-1/2 z-10 cursor-pointer"
+        className="absolute top-1/2 text-black left-3 -translate-y-1/2 z-10 cursor-pointer"
         onClick={onClick}
     >
         <GrPrevious size={28} />
@@ -29,6 +29,7 @@ const PrevArrow = ({ onClick }) => (
 
 function Banner() {
     const sliderRef = useRef(null);
+
 
     const settings = {
         dots: true,
@@ -58,16 +59,19 @@ function Banner() {
     ];
 
     return (
-        <div className="overflow-hidden mt-[80px] w-full relative">
+        <div className="overflow-hidden w-full lg:mt-35 mt-20 relative">
             <Slider {...settings} ref={sliderRef}>
                 {data.map((d, index) => (
-                    <div key={index} className="relative w-full">
+                    <div
+                        key={index}
+                        className="relative w-full md:h-[550px] sm:h-[400px] h-[150px]"
+                    >
                         <Image
                             src={d.img}
                             alt={d.alt}
-                            width={2000}
-                            height={600}
-                            className="w-full h-[600px] object-cover md:h-[470px] sm:h-[300px] rounded-md"
+                            fill
+                            priority
+                            className="object-cover object-top"
                         />
                     </div>
                 ))}
