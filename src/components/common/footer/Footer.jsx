@@ -13,13 +13,15 @@ export default function Footer() {
         <div>
           {/* Logo */}
           <div className="mb-4">
-            <Image
-              src="/logo/logo.png" // replace with your logo path
-              alt="Utsao Logo"
-              width={150}
-              height={60}
-              className="object-contain"
-            />
+            <Link href="/">
+              <Image
+                src="/logo/logo.png" // replace with your logo path
+                alt="Utsao Logo"
+                width={150}
+                height={60}
+                className="object-contain"
+              />
+            </Link>
           </div>
 
           {/* Description */}

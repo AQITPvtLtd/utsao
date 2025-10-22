@@ -17,7 +17,7 @@ export default function Navbar({ top = "3.5rem" }) {
         {/* Logo (visible on mobile) */}
         <Link href="/" className="flex items-center gap-2 md:hidden">
           <Image
-            src="/logo/logo.webp"
+            src="/logo/logo.png"
             alt="Cancer Onco Logo"
             width={140}
             height={45}
