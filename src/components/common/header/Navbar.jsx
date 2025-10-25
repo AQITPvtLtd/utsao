@@ -5,13 +5,11 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import navItems from "@/data/navData";
 
-export default function Navbar({ top = "3.5rem" }) {
+export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <div
-      style={{ top }}
-      className="fixed left-0 right-0 z-40 transition-all duration-300"
     >
       <nav className="flex justify-between items-center px-4 sm:px-6 md:px-12 lg:px-20 py-4 md:py-5 bg-[#efdecc] shadow relative">
         {/* Logo (visible on mobile) */}

@@ -72,6 +72,7 @@ export default function AboutUs() {
           >
             Mission <span className="text-[#b89f7d]">and</span> Vision
           </h2>
+          <div className="w-20 h-1 bg-[#efdecc] mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10">

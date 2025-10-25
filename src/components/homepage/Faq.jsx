@@ -57,6 +57,7 @@ const Faq = () => {
                         <h2 className="lg:text-5xl text-3xl font-bold text-gray-900 leading-tight" style={{ fontFamily: "'Dancing Script', cursive" }}>
                             Frequently Asked<br /><span className="text-[#b89f7d]">Questions</span>
                         </h2>
+                        <span className="block w-16 h-1 bg-[#efdecc] mt-3 rounded-full"></span>
                     </div>
 
                     {/* Right Accordion */}

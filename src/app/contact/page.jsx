@@ -3,7 +3,7 @@ import ContactUs from './Contact'
 
 const page = () => {
     return (
-        <div className='lg:mt-45 md:mt-35 mt-20'>
+        <div>
             <ContactUs />
             <div className="grid grid-cols-1 lg:grid-cols-12 py-6">
                 <div className="col-span-12 lg:col-start-2 lg:col-span-10 px-4 lg:px-0">

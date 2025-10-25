@@ -80,6 +80,7 @@ const Products = () => {
           >
             Explore Our <span className="text-transparent bg-clip-text bg-[#b89f7d]">Products</span>
           </h2>
+          <div className="w-20 h-1 bg-[#efdecc] mx-auto mt-4 rounded-full"></div>
         </div>
 
         {/* Product Slider */}

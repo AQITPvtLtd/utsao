@@ -59,7 +59,7 @@ function Banner() {
     ];
 
     return (
-        <div className="overflow-hidden w-full lg:mt-35 mt-20 relative">
+        <div className="overflow-hidden w-full relative">
             <Slider {...settings} ref={sliderRef}>
                 {data.map((d, index) => (
                     <div

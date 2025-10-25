@@ -102,6 +102,7 @@ export default function WhyChooseUs() {
                     >
                         Why Choose <span className="text-[#b89f7d]">Us</span>
                     </h2>
+                    <div className="w-20 h-1 bg-[#efdecc] mx-auto mt-4 rounded-full"></div>
                 </div>
 
                 {/* First 3 Cards */}

@@ -91,12 +91,15 @@ const ContactUs = () => {
   return (
     <div ref={sectionRef} className="px-4 sm:px-6 lg:px-20 py-12 overflow-hidden">
       {/* Heading */}
-      <h1
-        className="contact-heading text-3xl sm:text-4xl font-bold text-center mb-8 text-black"
-        style={{ fontFamily: "'Dancing Script', cursive" }}
-      >
-        Contact <span className="text-[#b89f7d]">Us</span>
-      </h1>
+      <div className="text-center mb-14 why-heading">
+        <h2
+          className="text-4xl sm:text-5xl font-bold text-gray-900"
+          style={{ fontFamily: "'Dancing Script', cursive" }}
+        >
+          Contact <span className="text-[#b89f7d]">Us</span>
+        </h2>
+        <div className="w-20 h-1 bg-[#efdecc] mx-auto mt-4 rounded-full"></div>
+      </div>
 
       {/* Intro Text */}
       <p className="contact-intro text-gray-700 text-lg max-w-3xl mx-auto text-center mb-12">
